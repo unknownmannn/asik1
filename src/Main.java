@@ -21,6 +21,14 @@ public class Main {
                 System.out.println(avarageArr(num, arr));
                 break;
 
+            case 3:
+                if(primeNum(17)){
+                    System.out.println("Prime");
+                } else{
+                    System.out.println("Composite");
+                }
+
+
 
         }
     }
@@ -37,5 +45,16 @@ public class Main {
             return arr[0];
         }
         return (arr[n-1] + (n-1)*avarageArr(n-1, arr)) / n;
+    }
+    public static boolean primeNum(int num){
+        if(num <= 1){
+            return false;
+        }
+        for (int i = 2; i < Math.sqrt(num); i++){
+            if(num % i == 0){
+                return false;
+            }
+        }
+        return true;
     }
 }
