@@ -40,6 +40,12 @@ public class Main {
             case 7:
                 reverseArr(num, arr);
 
+            case 8:
+                System.out.println(consistDigit("123sui", 0) ? "YES" : "NO");
+
+            case 9:
+                System.out.println(binomialCoefficient(7, 3));
+
 
 
 
@@ -97,6 +103,24 @@ public class Main {
         System.out.println(arr[n-1] + " ");
         reverseArr(n-1, arr);
     }
+    public static boolean consistDigit(String s, int index){
+        if(index == s.length()){
+            return false;
+        }
+
+        if(Character.isDigit(s.charAt(index))){
+            return true;
+        }
+        return consistDigit(s, index+1);
+
+    }
+    public static int binomialCoefficient(int n, int k){
+        if(k == 0 || n == k){
+            return 1;
+        }
+        return binomialCoefficient(n-1, k-1) + binomialCoefficient(n-1, k);
+    }
+
 
 
 
