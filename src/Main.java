@@ -191,7 +191,6 @@ public class Main {
         if(index == s.length()){
             return false;
         }
-
         if(Character.isDigit(s.charAt(index))){
             return true;
         }
