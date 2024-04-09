@@ -1,3 +1,33 @@
+
+/*import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("write a word:");
+        String str = scanner.nextLine();
+        if (polindr(str)) {
+            System.out.println(str + " not palindrom");
+        }else {
+            System.out.println(str + " its palindrom");
+        }
+
+        scanner.close();
+    }
+
+    public static boolean polindr(String str) {
+
+        str = str.toLowerCase();
+        if (str.length() == 0 || str.length() == 1) {
+            return true;
+        }
+        if (str.charAt(0) == str.charAt(str.length() - 1)) {
+            return polindr(str.substring(1, str.length() - 1));
+        }
+        return false;
+    }
+
+}*/
 import java.util.Scanner;
 
 public class Main {
