@@ -31,6 +31,9 @@ public class Main {
             case 4:
                 System.out.println(factorial(5));
 
+            case 5:
+                System.out.println(fibonachi(17));
+
 
 
         }
@@ -65,6 +68,12 @@ public class Main {
             return 1;
         }
         return n * factorial(n-1);
+    }
+    public static int fibonachi(int n){
+        if(n <= 1){
+            return n;
+        }
+        return fibonachi(n-1) + fibonachi(n-2);
     }
 
 
