@@ -1,4 +1,10 @@
-Introduction
+public class Main {
+    public static void main(String[] args) {
+        String text = "<h1>Introduction</h1>\n" +
+               
+        System.out.println(text);
+    }
+}Introduction
 This Java project demonstrates the implementation of various recursive functions to solve common problems, including finding the minimum element in an array, calculating the average of elements, checking for prime numbers, computing factorials, generating Fibonacci numbers, and more.
 
 Getting Started
