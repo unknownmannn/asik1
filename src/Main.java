@@ -1,15 +1,32 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        System.out.println("Select the task 1-10");
+        Scanner sc = new Scanner(System.in);
+        int problem = sc.nextInt();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        int[] arr = {6, 9, 5, 1, 12, 43, 54, 51};
+        int num = 8;
+
+        switch (problem) {
+            case 1:
+
+                long startTime = System.nanoTime();
+                System.out.println("result: " + findingMin(num, arr) +
+                        "\nruntime: " + (double) (System.nanoTime() - startTime) / 1000000000 +
+                        "\ntime complexity: 0(n)");
+                break;
+
+
         }
+    }
+
+
+    public static int findingMin(int n, int[] arr) {
+        if (n == 1) {
+            return arr[0];
+        }
+        return Math.min(arr[n - 1], findingMin(n - 1, arr));
     }
 }
