@@ -8,7 +8,7 @@ public class Main {
         String str = scanner.nextLine();
         if (polindr(str)) {
             System.out.println(str + " not palindrom");
-        }else {
+        } else {
             System.out.println(str + " its palindrom");
         }
 
