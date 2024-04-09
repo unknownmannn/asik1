@@ -1,6 +1,8 @@
 <h1>Introduction</h1>
             
 This Java project demonstrates the implementation of various recursive functions to solve common problems, including finding the minimum element in an array, calculating the average of elements, checking for prime numbers, computing factorials, generating Fibonacci numbers, and more.
+<h1>Project Repository</h1>
+https://github.com/unknownmannn/asik1.git
 
 <h1>Getting Started</h1>
 To run the program, ensure you have Java installed on your system. Follow these steps:
