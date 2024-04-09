@@ -17,6 +17,9 @@ public class Main {
                         "\nruntime: " + (double) (System.nanoTime() - startTime) / 1000000000 +
                         "\ntime complexity: 0(n)");
                 break;
+            case 2:
+                System.out.println(avarageArr(num, arr));
+                break;
 
 
         }
@@ -28,5 +31,11 @@ public class Main {
             return arr[0];
         }
         return Math.min(arr[n - 1], findingMin(n - 1, arr));
+    }
+    public static double avarageArr(int n, int[] arr){
+        if(n == 1){
+            return arr[0];
+        }
+        return (arr[n-1] + (n-1)*avarageArr(n-1, arr)) / n;
     }
 }
