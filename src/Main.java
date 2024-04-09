@@ -34,6 +34,11 @@ public class Main {
             case 5:
                 System.out.println(fibonachi(17));
 
+            case 6:
+                System.out.println(apower(2, 10));
+
+
+
 
 
         }
@@ -75,6 +80,13 @@ public class Main {
         }
         return fibonachi(n-1) + fibonachi(n-2);
     }
+    public static int apower(int number, int power){
+        if(power == 1){
+            return number;
+        }
+        return number * apower(number, power-1);
+    }
+
 
 
 
