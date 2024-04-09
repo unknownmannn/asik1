@@ -1,10 +1,26 @@
-a
-Copy code
-public class Main {
-    public static void main(String[] args) {
-        String text = "<h1>Заголовок</h1>\n" +
-                "<p style=\"font-size:20px;\">Это текст с увеличенным размером шрифта.</p>\n" +
-                "<p style=\"font-size:24px;\">Это еще один абзац с большим шрифтом.</p>";
-        System.out.println(text);
-    }
-}
+Introduction
+This Java project demonstrates the implementation of various recursive functions to solve common problems, including finding the minimum element in an array, calculating the average of elements, checking for prime numbers, computing factorials, generating Fibonacci numbers, and more.
+
+Getting Started
+To run the program, ensure you have Java installed on your system. Follow these steps:
+
+Clone the repository or download the source code files.
+Compile the Main.java file using a Java compiler.
+Run the compiled .class file.
+Usage
+Upon running the program, you'll be prompted to select a task by entering a number between 1 and 10. Each number corresponds to a specific problem solution. After selecting a task, the program will execute the corresponding function and display the result, runtime, and time complexity analysis.
+
+Problems Solved
+Find Minimum: Finds the minimum element in an array recursively.
+Average of Array: Calculates the average of elements in an array recursively.
+Check Prime Number: Determines whether a given number is prime or composite.
+Factorial: Computes the factorial of a given number recursively.
+Fibonacci Series: Generates the nth Fibonacci number recursively.
+Power of: Calculates the power of a number recursively.
+Reverse Array: Reverses the elements of an array recursively.
+Check Digit: Checks if a string contains a digit recursively.
+Binomial Coefficient: Computes the binomial coefficient recursively.
+Greatest Common Divisor (GCD): Finds the greatest common divisor of two numbers recursively.
+Time Complexity Analysis
+The time complexity analysis is provided for each problem solution to give an understanding of the efficiency of the algorithm used.
+
