@@ -46,6 +46,9 @@ public class Main {
             case 9:
                 System.out.println(binomialCoefficient(7, 3));
 
+            case 10:
+                System.out.println(Gsd(12, 3));
+
 
 
 
@@ -120,6 +123,13 @@ public class Main {
         }
         return binomialCoefficient(n-1, k-1) + binomialCoefficient(n-1, k);
     }
+    public static int Gsd(int a, int b){
+        if(b == 0){
+            return a;
+        }
+        return Gsd(b, a%b);
+    }
+
 
 
 
