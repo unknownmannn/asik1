@@ -37,6 +37,9 @@ public class Main {
             case 6:
                 System.out.println(apower(2, 10));
 
+            case 7:
+                reverseArr(num, arr);
+
 
 
 
@@ -85,6 +88,14 @@ public class Main {
             return number;
         }
         return number * apower(number, power-1);
+    }
+    public static void reverseArr(int n, int[] arr){
+        if(n == 1){
+            System.out.print(arr[0] + " ");
+            return;
+        }
+        System.out.println(arr[n-1] + " ");
+        reverseArr(n-1, arr);
     }
 
 
