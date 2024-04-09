@@ -28,6 +28,9 @@ public class Main {
                     System.out.println("Composite");
                 }
 
+            case 4:
+                System.out.println(factorial(5));
+
 
 
         }
@@ -57,4 +60,14 @@ public class Main {
         }
         return true;
     }
+    public static int factorial(int n){
+        if (n == 1){
+            return 1;
+        }
+        return n * factorial(n-1);
+    }
+
+
+
+
 }
